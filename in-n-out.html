@@ -29,6 +29,31 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown(5000);
+    });
+    $("#stop").click(function(){
+        $("#panel").stop();
+    });
+});
+</script>
+
+<style>
+#panel, #flip {
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -109,7 +134,11 @@
       <font size=100 color =green><em>IN-N-OUT BURGER</em></font>
 
       <hr class="featurette-divider">
-
+      <div id="flip"><h2><font size="9">Introduction</font></h2></div>
+<div id="panel">
+In-N-Out Burger is an impromptu restaurant chain headquartered in Irvine, Calif., With stores in five western states. It exists only in the United States, and there are about 250 locations in Nevada, Arizona, and Utah outside California as of October 2010. 
+In 1948, Harry Snyder and his wife Esther Snyder founded the Valdwin Park, California. When Harry Snyder died in 1976, his son Rich Snyder inherited the company and grew rapidly. In 1992, he established a branch in Las Vegas for the first time outside of Southern California. The following year, Harry died of an airplane accident, and now he owns the company, the grandson of the founding couple, Lynnie Martinez.
+There are three types of hamburgers sold in and out: hamburgers, cheeseburgers, and double double. In addition, there are additional meals available on the Internet that are not available on the restaurant table.</div>
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Location </h2><br />
@@ -131,14 +160,14 @@
       <h2 class="featurette-heading"><em>PHOTO </em></h2><br />
       <div class="row featurette">
         <div class="col-md-6">
-            <img class="featurette-image img-responsive center-block" height="500"src="../food/in-n-out.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive center-block" width="1000"height="500"src="../food/in-n-out.jpg" alt="Generic placeholder image">
 
 
 
         </div>
         <div class="col-md-6">
 
-          <img class="featurette-image img-responsive center-block"  height="500"src="../food/in-n-out2.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" width="1000" height="500"src="../food/in-n-out2.jpg" alt="Generic placeholder image">
 
         </div>
 

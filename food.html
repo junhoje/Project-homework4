@@ -30,7 +30,7 @@
 
         }
         function mouseout(path){
-          
+
           var wid2= Number(path.width);
           var hei2 =  Number(path.height);
           path.width = wid2/2;
@@ -46,6 +46,14 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+        });
+    });
+    </script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -128,8 +136,8 @@
           <div class="col-lg-4">
             <div id="food1">
             <img class="img-circle" src="../food/in-n-out.jpg" alt="Generic placeholder image" width="140" height="140" onmouseover="showBig(this)" onmouseout="mouseout(this)">
-            <h2>IN N OUT BURGER</h2>
-            <p>In-N-Out Burger is an American regional chain of fast food restaurants with locations primarily in the American Southwest and Pacific coast.It was founded in Baldwin Park, California in 1948 by Harry Snyder and his wife Esther Snyder.</p>
+            <div id="flip"><h2>IN N OUT BURGER</h2></div>
+            <div id="panel">In-N-Out Burger is an American regional chain of fast food restaurants with locations primarily in the American Southwest and Pacific coast.It was founded in Baldwin Park, California in 1948 by Harry Snyder and his wife Esther Snyder.</div>
             <p><a class="btn btn-default" href="in-n-out.html" role="button">View details &raquo;</a></p>
           </div>
           </div><!-- /.col-lg-4 -->

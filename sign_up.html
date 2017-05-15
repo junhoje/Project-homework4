@@ -45,6 +45,15 @@
         }
       }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#btn3").click(function(){
+        $(".from-control").val("");
+    });
+});
+</script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -175,6 +184,7 @@
               <div class="form-group text-center">
                 <button type="submit" class="btn btn-info" onclick="clickMe()">Sign up<i class="fa fa-check spaceLeft"></i></button>
                 <button type="submit" class="btn btn-warning">Cancel<i class="fa fa-times spaceLeft"></i></button>
+                <button type="submit" class="btn btn-danger" id="btn3">Reset<i class="fa fa-times spaceLeft"></i></button>
               </div>
             </form>
           </div>

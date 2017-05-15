@@ -29,6 +29,16 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $(".intro").click(function(){
+          $(".intro1").hide("slow", function(){
+              alert("The paragraph is now hidden");
+          });
+      });
+  });
+  </script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -108,7 +118,8 @@
       <!-- START THE FEATURETTES -->
       <font size=100 color=green  ><em>Griffith Observatory</em></font>
       <hr class="featurette-divider">
-
+      <h1><font size="10">Introduction</font> <font size="3"  class="intro">  ..hide paragraph</font></h2><br /><br /><br /><p><font size="5">Griffith Observatory is an icon of Los Angeles, a national leader in public astronomy, a beloved civic gathering place, and one of southern California's most popular attractions. The Observatory is located on the southern slope of Mount Hollywood in Griffith Park, just above the Los Feliz neighborhood. It is 1,134 feet above sea level and is visible from many parts of the Los Angeles basin. The Observatory is the best vantage point for observing the world-famous Hollywood Sign.</font></p><br />
+      <p class="intro1"><font size="5">Griffith Observatory is a free-admission, public facility owned and operated by the City of Los Angeles Department of Recreation and Parks in the middle of an urban metropolis of ten million people. The Observatory is one of the most popular informal education facilities in the United States and the most-visited public observatory in the world (with over one million visitors a year). Griffith Observatory is a unique hybrid of public observatory, planetarium, and exhibition space. It was constructed with funds from the bequest of Griffith J. Griffith (who donated the land for Griffith Park in 1896), who specified the purpose, features, and location of the building in his 1919 will. Upon completion of construction in 1935, the Observatory was given to the City of Los Angeles with the provision that it be operated for the public with no admission charge. When it opened in 1935, it was one of the first institutions in the U.S. dedicated to public science and possessed the third planetarium in the U.S. </font></p><br /><br /><br /><br /><br />
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Location </h2>
